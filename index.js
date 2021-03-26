@@ -252,7 +252,7 @@ bot.on("message", async message => {
       let languages = db.get(`lang_${message.guild.id}`)
 
       if (!languages) {
-        return send("You did not seted any language yet so its english as default, to set language use `f!lang <name>`", message, "BLUE")
+        return send("The default languaje is english, to change it to one of your choice run the `lang <languaje>` command", message, "BLUE")
       }
 
       return send("Your current language is **" + languages + "**", message, "BLUE")
